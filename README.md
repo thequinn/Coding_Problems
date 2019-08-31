@@ -1,11 +1,8 @@
-# Coding Practices from Codewrs and HackerRank:
+# 同志仍須努力：
+承認学渣的開始: 2019,08,31~present [Codewars, HackerRank](https://github.com/thequinn/Coding_Problems) 
 
-## 承認学渣的開始: 
-2019,08,31~present [thequinn/Coding_Problems](https://github.com/thequinn/Coding_Problems) 
-
-#### 壽終正寢:
-學渣的逆襲:     
-2018,04,10~06,26 [thequinn/My_LeetCode](https://github.com/thequinn/My_LeetCode)
+### 革命尚未成功:
+學渣的逆襲: 2018,04,10~06,26 [LeetCode](https://github.com/thequinn/My_LeetCode)
 
 :bike:  :car:  :tram:  :helicopter:  :airplane:  :rocket:
 
