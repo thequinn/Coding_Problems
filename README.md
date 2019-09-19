@@ -1,3 +1,3 @@
-# My Coding Practices
+# My Coding Practices:
 
 Websites: Codewars, HackerRank
