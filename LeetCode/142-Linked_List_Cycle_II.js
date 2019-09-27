@@ -1,6 +1,5 @@
 /*
 142. Linked List Cycle II
-
 */
 
 var detectCycle = function(head) {
