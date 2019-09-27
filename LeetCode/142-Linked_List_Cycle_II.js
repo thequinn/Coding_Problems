@@ -16,3 +16,4 @@ var detectCycle = function(head) {
   }
   return false;
 };
+
