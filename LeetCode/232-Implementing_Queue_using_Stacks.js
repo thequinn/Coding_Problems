@@ -1,12 +1,9 @@
-/*
-232. Implement Queue using Stacks
-*/
 
 /**
  * Initialize your data structure here.
  */
 var MyQueue = function() {
-
+  this.store = [];
 };
 
 /**
@@ -15,7 +12,7 @@ var MyQueue = function() {
  * @return {void}
  */
 MyQueue.prototype.push = function(x) {
-    
+  this.store.push(x);
 };
 
 /**
@@ -23,7 +20,9 @@ MyQueue.prototype.push = function(x) {
  * @return {number}
  */
 MyQueue.prototype.pop = function() {
-    
+  let elem = this.store[0];
+  this.store = this.store.slice(1, this.store.length);
+  return elem;
 };
 
 /**
@@ -31,7 +30,7 @@ MyQueue.prototype.pop = function() {
  * @return {number}
  */
 MyQueue.prototype.peek = function() {
-    
+  return this.store[0];
 };
 
 /**
@@ -39,14 +38,8 @@ MyQueue.prototype.peek = function() {
  * @return {boolean}
  */
 MyQueue.prototype.empty = function() {
-    
+  return this.store.length === 0;
 };
 
-/** 
- * Your MyQueue object will be instantiated and called as such:
- * var obj = new MyQueue()
- * obj.push(x)
- * var param_2 = obj.pop()
- * var param_3 = obj.peek()
- * var param_4 = obj.empty()
- */
+
+
