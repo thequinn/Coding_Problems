@@ -1,5 +1,5 @@
 /*
-242. Valid Anagram  => Anagram: 由調換字母順序而成的字
+242. Valid Anagram ==> Anagram: 由調換字母順序而成的字
 */
 
 var isAnagram = function(s, t) {
