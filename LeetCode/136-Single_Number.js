@@ -1,6 +1,8 @@
 /*
-Reference:
-https://leetcode.com/problems/single-number/solution/
+136. Single Number
+
+LeetCode Std Solution:
+- https://leetcode.com/problems/single-number/solution/
 
 - Approach #1: List Operation
 -- Time complexity : O(n^2)
@@ -22,34 +24,31 @@ https://leetcode.com/problems/single-number/solution/
 -- Space complexity: O(1)
 */
 
-
-// Approach #1: List Operation
-// - If an elem is new to nums[], append it, otherwise remove it
-var singleNumber_1 = function(nums) {
+// - Approach #1:
+// - 思路：If an elem is new to nums[], append it, otherwise remove it
+/*var singleNumber = function(nums) {
   var tmp = [];
   for (var i = 0; i < nums.length; i++) {
-    var indexOfElem = tmp.indexOf(nums[i]);
-    if (indexOfElem == -1) {
+    var idx = tmp.indexOf(nums[i]);
+    if (idx == -1) {
       tmp.push(nums[i]);
-    }
-    else {
-      tmp.splice(indexOfElem, 1);
+    } else {
+      tmp.splice(idx, 1);  // Remove 1 elem at idx
     }
   }
   // The only elem left in nums[] is the single num
   return tmp.pop();
-}
+};*/
 
 // Approach #2: Hash Table
 // - If our hash tbl doesn't have the elem, add it, otherwise remove it.
-var singleNumber_2 = function(nums) {
+/*var singleNumber = function(nums) {
   var hashTbl = {};
   for (var i = 0; i < nums.length; i++) {
     // If nums[i] key doesn't exist in hashTbl obj
-    if ( !(nums[i] in hashTbl) ) {
+    if ( ! (nums[i] in hashTbl) ) {
       hashTbl[ nums[i] ] = nums[i];
-    }
-    else {
+    } else {
       delete hashTbl[ nums[i] ];
     }
   }
@@ -57,38 +56,41 @@ var singleNumber_2 = function(nums) {
   for (var key in hashTbl) {
     return hashTbl[key];
   }
-}
+}*/
 
 // Approach #3: Using Math and Set
 // - Concept: 2*(a+b+c) − (a+a+b+b+c) = c
-var singleNumber_3 = function(nums) {
-  var sumOfNums = 0, sumOfSet = 0;
+var singleNumber = function(nums) {
 
   // Get unique values of nums[] and transform the arr to a set
-  var mySet = new Set(nums);
+  let mySet = new Set(nums);
+  let sumOfSet = 0;
+  mySet.forEach(num => sumOfSet += num);
 
-  mySet.forEach(function(elem) {
-    sumOfSet += elem;
-  });
+  let sumOfNums = nums.reduce((acc, cur) => acc + cur);
 
-  for (var i = 0; i < nums.length; i++) {
-    sumOfNums += nums[i];
-  }
-
-  return (2 * sumOfSet) - sumOfNums ;
+  return (2 * sumOfSet) - sumOfNums;
 }
 
 // Approach #4: Bitwise Manupulation
 // - Hint: a⊕b⊕a = (a⊕a)⊕b = 0⊕b = b
-var singleNumber_4 = function(nums) {
+//
+// - 技巧！！ 
+// -- Bitwise XOR: 
+// (1）outputs true only when inputs differ
+// (2) ex 1 ^ 3 = 2  (別忘記轉變十進位到二進位：01 ^ 11 = 10)
+//
+var singleNumber = function(nums) {
   var result = nums[0];
   for (var i = 1; i < nums.length; i++) {
+    console.log(result, " ^ ", nums[i], " = ", result ^ nums[i]);
     result = result ^ nums[i];
   }
   return result;
 }
 
-var nums_1 = [2,2,1];
-var nums_2 = [4,1,2,1,2];
-var result = singleNumber_3(nums_2);
+//var nums = [2,2,1];
+var nums = [2,2,1,3,1];
+//var nums = [4,1,2,1,2];
+var result = singleNumber(nums);
 console.log(result);
