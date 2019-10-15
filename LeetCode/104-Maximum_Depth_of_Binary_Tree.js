@@ -1,6 +1,5 @@
 /*
 104. Maximum Depth of Binary Tree
-
 ex. 3
    / \
   9  20
@@ -29,5 +28,3 @@ var helper = function(root, dep, leftMax, rightMax) {
  
   return 1 + Math.max(leftMax, rightMax);
 };
-
-
