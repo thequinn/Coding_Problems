@@ -1,6 +1,5 @@
 /*
 461. Hamming Distance
-
 */
 
 var hammingDistance = function(x, y) {
