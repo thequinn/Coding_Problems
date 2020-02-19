@@ -47,17 +47,4 @@ class Solution(object):
 
     return self.count
 
-#----------------------------------------------
-# Testing
 
-grid = [
-      ['1','1','1','1','0'],
-      ['1','1','0','1','0'],
-      ['1','1','0','0','0'],
-      ['0','0','0','0','0']
-    ];
-#print(grid)
-
-sol = Solution()
-count = sol.numIslands(grid)
-print("count: %d" % count)

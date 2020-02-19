@@ -63,21 +63,6 @@ public class NumberOfIslands_BFS {
     }
   }
 
-  //----- Testing -----
-  public static void main(String args[]) {
-    char[][] grid = {
-      {'1','1','1','1','0'},
-      {'1','1','0','1','0'},
-      {'1','1','0','0','0'},
-      {'0','0','0','0','0'}
-    };
-
-    NumberOfIslands_BFS N = new NumberOfIslands_BFS();
-
-    int count = N.numIslands(grid);
-    System.out.println(count);
-  }
-
 }
 
 
