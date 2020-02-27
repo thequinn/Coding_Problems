@@ -41,4 +41,3 @@ class Solution(object):
         generate()
         return ans
 
-
