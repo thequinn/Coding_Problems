@@ -1,5 +1,6 @@
 /*
 22. Generate Parentheses
+
 */
 
 class Solution(object):
