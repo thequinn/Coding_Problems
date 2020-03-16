@@ -15,7 +15,6 @@ class Solution:
 
     return output
 
-
 #---------- Testing ----------
 nums = [1,2,3]
 s = Solution()
