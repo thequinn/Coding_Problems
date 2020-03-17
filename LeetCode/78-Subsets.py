@@ -3,17 +3,18 @@
 
 """
 
-from typing import List
-
 class Solution:
-  def subsets(self, nums: List[int]) -> List[List[int]]:
-    n = len(nums)
-    output = [[]]
+    def subsets(self, nums):
+        all_subsets = [[]]
 
-    for num in nums:
-      output += [curr + [num] for curr in output]
+        if not nums:
+            return all_subsets
 
-    return output
+        for num in nums:
+            for idx in range(len(all_subsets)):
+                all_subsets.append(all_subsets[idx]+[num])
+
+        return all_subsets
 
 #---------- Testing ----------
 nums = [1,2,3]
