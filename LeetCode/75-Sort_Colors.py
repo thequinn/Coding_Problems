@@ -3,21 +3,15 @@
 
 """
 
-# Approach #1: One Pass
-function sortColors (nums) {
-  let low = 0, high = nums.length - 1;
-
-  for (let i = 0; i <= high;i++) {
-    if (nums[i] === 0) {
-      if (i !== low) {
-        [nums[i], nums[low]] = [nums[low], nums[i]];
-      }
-      low++;
-    } else if (nums[i] == 2) {
-       [nums[i], nums[high]] = [nums[high], nums[i]];
-       high--;
-       i--;
-    }
-  }
-};
-
+def sortColors1(self, nums):
+    c0 = c1 = c2 = 0
+    for num in nums:
+        if num == 0:
+            c0 += 1
+        elif num == 1:
+            c1 += 1
+        else:
+            c2 += 1
+    nums[:c0] = [0] * c0
+    nums[c0:c0+c1] = [1] * c1
+    nums[c0+c1:] = [2] * c2
