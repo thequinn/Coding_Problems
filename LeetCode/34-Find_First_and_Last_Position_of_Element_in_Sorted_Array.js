@@ -23,7 +23,7 @@ var searchRange = function(nums, target) {
   return [left, right];
 };
 
-
+//---------- Testing ----------
 let nums = [5,7,7,8,8,10], target = 6;  // Output: [-1,-1]
 let res = searchRange(nums, target);
 console.log("\nres:", res);
