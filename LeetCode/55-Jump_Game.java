@@ -1,6 +1,5 @@
 /*
 55. Jump Game
-
 */
 public class Solution_1 {
   public boolean canJumpFromPos(int pos, int[] nums) {
