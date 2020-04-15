@@ -1,6 +1,5 @@
 /*
 62. Unique Paths
-
 */
 
 public int uniquePaths(int m, int n) {
