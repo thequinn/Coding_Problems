@@ -1,14 +1,26 @@
 public class Longest_Increasing_Subsequence {
 
-  public static void main(String[] args) {
+  public int lengthOfLIS(int[] nums) {
+    if (nums.length == 0) {
+      return 0;
+    }
 
-    int[] nums = {10,9,2,5,3,7,101,18};  // 4
+    int[] maxLen = new int[nums.length];
+    Arrays.fill(maxLen , 1);
 
-    Solution_1 sol = new Solution_1();
+    int max = 1;
 
-    int res = sol.lengthOfLIS(nums);
-    System.out.println("res:" + res);
+    for (int i = 1; i < nums.length; i++) {
+      for (int j = 0; j < i; j++){
+        if (nums[i] > nums[j]) {
+          maxLen[i] = Math.max(maxLen[i], maxLen[j] + 1);
+        }
+      }
 
+      max = Math.max(max, maxLen[i]);
+    }
+
+    return max;
   }
 
 }
