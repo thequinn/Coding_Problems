@@ -1,5 +1,6 @@
 /*
 226. Invert Binary Tree
+
 */
 
 var invertTree = function(root) {
