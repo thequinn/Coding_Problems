@@ -1,5 +1,6 @@
 /*
 169. Majority Element
+
 */
 
 const majorityElement = function(nums, lo = 0, hi = null) {
