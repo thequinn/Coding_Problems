@@ -1,6 +1,5 @@
 /*
 617. Merge Two Binary Trees
-
 */
 
 var mergeTrees = function(t1, t2) {
