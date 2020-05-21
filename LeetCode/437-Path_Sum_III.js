@@ -1,6 +1,5 @@
 /*
 437. Path Sum III
-
 */
 
 const pathSum = (root, sum) => {
