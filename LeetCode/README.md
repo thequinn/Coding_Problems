@@ -1,7 +1,7 @@
 # 学渣的逆袭：Starting Date: 2018/04/10 :milky_way:
 
-》LeetCode Solutions in JavaScript  
-I have solved **4 / 815** problems. 
+》LeetCode Solutions in JavaScript
+I have solved **4 / 815** problems.
 
 (Notes: :blue_book: means you need to buy a book from Leetcode)
 
@@ -34,4 +34,4 @@ I have solved **4 / 815** problems.
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/description/) | 2018/04/10 |  | Easy |
 |  |  | 2018/04/12 | added Appr #2 & #3 | |
 
-------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
