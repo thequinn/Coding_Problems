@@ -14,7 +14,6 @@ I have solved **4 / 815** problems.
 |  | []() | | | |
 |  | []() | | | |
 |  | []() | | | |
-|  | []() | | | |
 | 43 | [Multiply Strings](https://leetcode.com/problems/multiply-strings/) | 2019/09/04 | | Medium |
 |  |   | | | |
 | 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | 2019/02/26 | | Easy |
