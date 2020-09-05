@@ -1,6 +1,5 @@
 /*
 300. Longest Increasing Subsequence
-
 */
 
 var lengthOfLIS = function(nums) {
