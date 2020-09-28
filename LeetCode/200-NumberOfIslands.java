@@ -9,9 +9,7 @@ import java.util.*;
 public class NumberOfIslands_BFS {
 
   public int numIslands(char[][] grid) {
-    if (grid.length == 0) {
-      return 0;
-    }
+    if (grid.length == 0)   return 0;
 
     int m = grid.length, n = grid[0].length;
     boolean[][] visited = new boolean[m][n];
