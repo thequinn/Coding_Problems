@@ -1,6 +1,5 @@
 '''
 222. Count Complete Tree Nodes
-
 '''
 class Solution:
   def countNodes(self, root: TreeNode) -> int:
